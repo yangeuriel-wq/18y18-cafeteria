@@ -9,7 +9,7 @@ const menuItems = [
     name: "Affogato",
     description: "Shot de café espresso con una bola de helado de la casa.",
     size: "1 oz.",
-    price: 55,
+    price: 50,
     image: "/menu/affogato.jpg",
   },
   {
@@ -58,9 +58,8 @@ const menuItems = [
     category: "especiales",
     name: "Chocolate con Leche",
     description:
-      "Combinación de chocolate especial de la casa con leche cremada a tu elección (entera o deslactosada).",
+      "Combinación de chocolate especial de la casa con leche cremada a tu elección (entera o deslactosada). | Caliente: $75 · Frío: $70",
     size: "12 oz.",
-    price: 70,
     image: "/menu/chocolate.jpg",
   },
   {
@@ -68,9 +67,8 @@ const menuItems = [
     category: "especiales",
     name: "Horchata",
     description:
-      "Bebida de horchata con un toque canela y leche cremada a tu elección.",
+      "Bebida de horchata con un toque canela y leche cremada a tu elección. | Caliente: $75 · Frío: $70",
     size: "12 oz.",
-    price: 75,
     image: "/menu/horchata.jpg",
   },
   {
@@ -78,9 +76,8 @@ const menuItems = [
     category: "especiales",
     name: "Taro",
     description:
-      "Bebida a base de raíz de taro con leche cremada (entera o deslactosada).",
+      "Bebida a base de raíz de taro con leche cremada (entera o deslactosada). | Caliente: $75 · Frío: $70",
     size: "12 oz.",
-    price: 75,
     image: "/menu/taro.jpg",
   },
   {
@@ -88,9 +85,8 @@ const menuItems = [
     category: "especiales",
     name: "Chai Latte",
     description:
-      "Mezcla de especias con leche cremada (entera o deslactosada).",
+      "Mezcla de especias con leche cremada (entera o deslactosada). | Caliente: $75 · Frío: $70",
     size: "12 oz.",
-    price: 75,
     image: "/menu/chai.jpg",
   },
   {
@@ -98,9 +94,8 @@ const menuItems = [
     category: "especiales",
     name: "Matcha Latte",
     description:
-      "Té verde molido de origen japonés + leche cremada (entera o deslactosada).",
+      "Té verde molido de origen japonés + leche cremada (entera o deslactosada). | Caliente: $75 · Frío: $70",
     size: "12 oz.",
-    price: 75,
     image: "/menu/matcha.jpg",
   },
 
@@ -190,7 +185,7 @@ const menuItems = [
     image: "/menu/tisana.jpg",
   },
 
-  // FRÍAS
+  // BEBIDAS FRÍAS
   {
     id: 12,
     category: "frias",
@@ -229,177 +224,207 @@ const menuItems = [
     image: "/menu/smoothie.jpg",
   },
 
-  // PANADERÍA
+  // PANADERÍA - CROISSANTS
   {
     id: 16,
     category: "panaderia",
+    subcategory: "croissants",
     name: "Croissant Natural",
     description: "Croissant artesanal de mantequilla.",
-    price: 25,
+    price: 70,
     image: "/menu/croissant-natural.jpg",
   },
   {
     id: 17,
     category: "panaderia",
+    subcategory: "croissants",
     name: "Croissant Nutella",
     description: "Croissant artesanal relleno de Nutella.",
-    price: 34,
+    price: 70,
     image: "/menu/croissant-nutella.jpg",
   },
   {
     id: 18,
     category: "panaderia",
+    subcategory: "croissants",
     name: "Croissant Pistache",
     description: "Croissant artesanal con pistache.",
-    price: 38,
+    price: 75,
     image: "/menu/croissant-pistache.jpg",
   },
   {
     id: 19,
     category: "panaderia",
+    subcategory: "croissants",
     name: "Croissant Chocolate Turin",
     description: "Croissant artesanal con chocolate Turin.",
-    price: 33,
+    price: 80,
     image: "/menu/croissant-chocolate.jpg",
   },
   {
     id: 20,
     category: "panaderia",
+    subcategory: "croissants",
     name: "Croissant Dulce de Leche y Almendra",
     description: "Croissant con dulce de leche y almendra.",
-    price: 34,
+    price: 75,
     image: "/menu/croissant-dulce-leche.jpg",
-  },
-  {
-    id: 21,
-    category: "panaderia",
-    name: "Chocolatín",
-    description: "Panadería francesa artesanal con chocolate.",
-    price: 32,
-    image: "/menu/chocolatin.jpg",
-  },
-  {
-    id: 22,
-    category: "panaderia",
-    name: "Cruffin Crema de Café",
-    description: "Cruffin artesanal relleno de crema de café.",
-    price: 32,
-    image: "/menu/cruffin.jpg",
-  },
-  {
-    id: 23,
-    category: "panaderia",
-    name: "Danes de Queso y Blueberry",
-    description: "Dane artesanal con queso y blueberry.",
-    price: 35,
-    image: "/menu/danes.jpg",
-  },
-  {
-    id: 24,
-    category: "panaderia",
-    name: "Monkey Bread con Chocolate y Plátano",
-    description: "Pan dulce artesanal con chocolate y plátano.",
-    price: 34,
-    image: "/menu/monkey-bread.jpg",
-  },
-  {
-    id: 25,
-    category: "panaderia",
-    name: "Concha Vainilla o Chocolate",
-    description: "Concha tradicional disponible en vainilla o chocolate.",
-    price: 16,
-    image: "/menu/concha.jpg",
-  },
-  {
-    id: 26,
-    category: "panaderia",
-    name: "Rol de Canela, Arándano y Nuez",
-    description: "Rol artesanal de canela con arándano y nuez.",
-    price: 32,
-    image: "/menu/rol-canela.jpg",
   },
   {
     id: 27,
     category: "panaderia",
+    subcategory: "croissants",
     name: "Croissant de Almendra",
     description: "Croissant artesanal con almendra.",
-    price: 42,
+    price: 80,
     image: "/menu/croissant-almendra.jpg",
   },
   {
     id: 28,
     category: "panaderia",
+    subcategory: "croissants",
     name: "Croissant de Frutos Rojos y Matcha",
     description: "Croissant artesanal con frutos rojos y matcha.",
-    price: 38,
+    price: 75,
     image: "/menu/croissant-matcha.jpg",
   },
-  {
-    id: 29,
-    category: "panaderia",
-    name: "Croissant de Strudel de Manzana",
-    description: "Croissant artesanal inspirado en el strudel de manzana.",
-    price: 35,
-    image: "/menu/croissant-manzana.jpg",
-  },
+
+  // PANADERÍA - ROLES
   {
     id: 30,
     category: "panaderia",
+    subcategory: "roles",
     name: "Rol de Guayaba y Queso Crema",
     description: "Rol artesanal de guayaba y queso crema.",
-    price: 38,
+    price: 70,
     image: "/menu/rol-guayaba.jpg",
   },
   {
+    id: 49,
+    category: "panaderia",
+    subcategory: "roles",
+    name: "Rol de Oreo",
+    description: "Rol de canela con Oreo.",
+    image: "/menu/rol-oreo.jpg",
+  },
+  {
+    id: 50,
+    category: "panaderia",
+    subcategory: "roles",
+    name: "Rol de Nutella",
+    description: "Rol de canela con Nutella.",
+    image: "/menu/rol-nutella.jpg",
+  },
+  {
+    id: 51,
+    category: "panaderia",
+    subcategory: "roles",
+    name: "Rol de Dulce de Leche con Nuez",
+    description: "Rol de canela con dulce de leche y nuez.",
+    image: "/menu/rol-dulce-leche.jpg",
+  },
+  {
+    id: 52,
+    category: "panaderia",
+    subcategory: "roles",
+    name: "Rol de Fresas",
+    description: "Rol de canela con fresas.",
+    image: "/menu/rol-fresas.jpg",
+  },
+  {
+    id: 53,
+    category: "panaderia",
+    subcategory: "roles",
+    name: "Rol de Fresas con Nutella",
+    description: "Rol de canela con fresas y Nutella.",
+    image: "/menu/rol-fresas-nutella.jpg",
+  },
+
+  // PANADERÍA - MUFFINS
+  {
     id: 31,
     category: "panaderia",
+    subcategory: "muffins",
     name: "Muffin de Ate con Queso",
     description: "Muffin artesanal de ate con queso.",
-    price: 45,
+    price: 60,
     image: "/menu/muffin-ate.jpg",
   },
   {
     id: 32,
     category: "panaderia",
-    name: "Muffin de Limón con Poppy Seeds Glaseado",
-    description: "Muffin de limón con semillas de amapola y glaseado.",
-    price: 45,
+    subcategory: "muffins",
+    name: "Muffin de Limón con semilla de amapola",
+    description: "Muffin de limón con semillas de amapola.",
+    price: 60,
     image: "/menu/muffin-limon.jpg",
   },
   {
     id: 33,
     category: "panaderia",
-    name: "Muffin de Manzana con Nuez y Crumble",
-    description: "Muffin de manzana con nuez y crumble.",
-    price: 50,
+    subcategory: "muffins",
+    name: "Muffin de Manzana con Nuez pecana",
+    description: "Muffin de manzana con nuez pecana.",
+    price: 65,
     image: "/menu/muffin-manzana.jpg",
   },
   {
     id: 34,
     category: "panaderia",
+    subcategory: "muffins",
     name: "Muffin de Arándanos, Blueberry y Chocolate Blanco",
     description: "Muffin de arándanos, blueberry y chocolate blanco.",
-    price: 50,
+    price: 60,
     image: "/menu/muffin-blueberry.jpg",
+  },
+
+  // PANADERÍA - OTROS PANES
+  {
+    id: 21,
+    category: "panaderia",
+    subcategory: "otros",
+    name: "Chocolatín",
+    description: "Panadería francesa artesanal con chocolate.",
+    price: 70,
+    image: "/menu/chocolatin.jpg",
+  },
+  {
+    id: 22,
+    category: "panaderia",
+    subcategory: "otros",
+    name: "Cruffin Crema de Café",
+    description: "Cruffin artesanal relleno de crema de café.",
+    price: 77,
+    image: "/menu/cruffin.jpg",
+  },
+  {
+    id: 23,
+    category: "panaderia",
+    subcategory: "otros",
+    name: "Danes de Queso y Blueberry",
+    description: "Dane artesanal con queso y blueberry.",
+    price: 80,
+    image: "/menu/danes.jpg",
   },
   {
     id: 35,
     category: "panaderia",
+    subcategory: "otros",
     name: "Strudel de Manzana con Nuez",
     description: "Strudel artesanal de manzana con nuez.",
     size: "150 g.",
-    price: 55,
+    price: 80,
     image: "/menu/strudel.jpg",
   },
 
-  // OPCIONALES
+  // BEBIDAS CON ALCOHOL
   {
     id: 36,
     category: "opcionales",
     name: "Carajillo",
     description: "Espresso de especialidad + Licor 43.",
     size: "4 oz.",
-    price: 150,
+    price: 120,
     image: "/menu/carajillo.jpg",
   },
   {
@@ -409,7 +434,7 @@ const menuItems = [
     description:
       "Espresso de especialidad + leche cremada + shot de Baileys.",
     size: "8 oz.",
-    price: 135,
+    price: 120,
     image: "/menu/fancy-latte.jpg",
   },
   {
@@ -418,7 +443,7 @@ const menuItems = [
     name: "Mimosa",
     description: "Vino espumoso + jugo de naranja.",
     size: "6 oz.",
-    price: 135,
+    price: 99,
     image: "/menu/mimosa.jpg",
   },
   {
@@ -427,7 +452,7 @@ const menuItems = [
     name: "Bellini",
     description: "Vino espumoso + néctar de durazno.",
     size: "6 oz.",
-    price: 135,
+    price: 99,
     image: "/menu/bellini.jpg",
   },
 ];
@@ -440,16 +465,39 @@ const categories = [
   { id: "tisanes", name: "Tisanas" },
   { id: "frias", name: "Bebidas frías" },
   { id: "panaderia", name: "Panadería" },
-  { id: "opcionales", name: "Opcionales" },
+  { id: "opcionales", name: "BEBIDAS CON ALCOHOL" },
+];
+
+const bakeryCategories = [
+  { id: "todos", name: "Toda la panadería" },
+  { id: "roles", name: "Roles" },
+  { id: "muffins", name: "Muffins" },
+  { id: "croissants", name: "Croissants" },
+  { id: "otros", name: "Otros panes" },
 ];
 
 function App() {
   const [activeCategory, setActiveCategory] = useState("todos");
+  const [activeBakeryCategory, setActiveBakeryCategory] = useState("todos");
 
-  const filteredItems =
-    activeCategory === "todos"
-      ? menuItems
-      : menuItems.filter((item) => item.category === activeCategory);
+  const filteredItems = menuItems.filter((item) => {
+    if (activeCategory === "todos") {
+      return true;
+    }
+
+    if (item.category !== activeCategory) {
+      return false;
+    }
+
+    if (
+      activeCategory === "panaderia" &&
+      activeBakeryCategory !== "todos"
+    ) {
+      return item.subcategory === activeBakeryCategory;
+    }
+
+    return true;
+  });
 
   const featured = menuItems.slice(0, 4);
 
@@ -597,7 +645,9 @@ function App() {
                     <p>{item.description}</p>
                   </div>
 
-                  <strong>${item.price}</strong>
+                  {item.price !== undefined && (
+                    <strong>${item.price}</strong>
+                  )}
                 </div>
               </article>
             ))}
@@ -638,6 +688,7 @@ function App() {
             </p>
           </div>
 
+          {/* CATEGORÍAS PRINCIPALES */}
           <div className="categories">
             {categories.map((category) => (
               <button
@@ -645,13 +696,37 @@ function App() {
                 className={
                   activeCategory === category.id ? "active" : ""
                 }
-                onClick={() => setActiveCategory(category.id)}
+                onClick={() => {
+                  setActiveCategory(category.id);
+
+                  if (category.id === "panaderia") {
+                    setActiveBakeryCategory("todos");
+                  }
+                }}
               >
                 {category.name}
               </button>
             ))}
           </div>
 
+          {/* SUBMENÚ DE PANADERÍA */}
+          {activeCategory === "panaderia" && (
+            <div className="categories bakery-categories">
+              {bakeryCategories.map((category) => (
+                <button
+                  key={category.id}
+                  className={
+                    activeBakeryCategory === category.id ? "active" : ""
+                  }
+                  onClick={() => setActiveBakeryCategory(category.id)}
+                >
+                  {category.name}
+                </button>
+              ))}
+            </div>
+          )}
+
+          {/* LISTA DE PRODUCTOS */}
           <div className="menu-list">
             {filteredItems.map((item) => (
               <article className="menu-item" key={item.id}>
@@ -673,12 +748,15 @@ function App() {
                   <div>
                     <h3>{item.name}</h3>
                     <p>{item.description}</p>
+
                     {item.size && (
                       <small>{item.size}</small>
                     )}
                   </div>
 
-                  <strong>${item.price}</strong>
+                  {item.price !== undefined && (
+                    <strong>${item.price}</strong>
+                  )}
                 </div>
               </article>
             ))}
