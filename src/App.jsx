@@ -1,8 +1,16 @@
 import { useState } from "react";
 import "./App.css";
 
+// ==========================================
+// MENÚ COMPLETO 18•18 CAFÉ
+// ==========================================
+
 const menuItems = [
+
+  // ========================================
   // CAFÉ
+  // ========================================
+
   {
     id: 1,
     category: "cafe",
@@ -25,8 +33,7 @@ const menuItems = [
     id: 3,
     category: "cafe",
     name: "Cappuccino",
-    description:
-      "Combinación de café espresso con leche cremada a tu elección (entera o deslactosada) y una cubierta espumosa.",
+    description: "Espresso con leche cremada a tu elección.",
     size: "12 oz.",
     price: 60,
     image: "/menu/cappuccino.jpg",
@@ -35,8 +42,7 @@ const menuItems = [
     id: 4,
     category: "cafe",
     name: "Moka",
-    description:
-      "Salsa de chocolate semi-amargo + espresso + leche cremada (entera o deslactosada).",
+    description: "Espresso combinado con chocolate y leche cremosa.",
     size: "12 oz.",
     price: 75,
     image: "/menu/moka.jpg",
@@ -45,20 +51,21 @@ const menuItems = [
     id: 5,
     category: "cafe",
     name: "Caramel Macchiato",
-    description:
-      "Salsa de caramelo + espresso + leche fría (entera o deslactosada) + hielos.",
-    size: "16 oz.",
+    description: "Espresso con leche cremosa y un toque de caramelo.",
+    size: "12 oz.",
     price: 80,
     image: "/menu/caramel-macchiato.jpg",
   },
 
+  // ========================================
   // ESPECIALES
+  // ========================================
+
   {
     id: 6,
     category: "especiales",
     name: "Chocolate con Leche",
-    description:
-      "Combinación de chocolate especial de la casa con leche cremada a tu elección (entera o deslactosada). | Caliente: $75 · Frío: $70",
+    description: "Bebida cremosa de chocolate. Caliente: $75 · Frío: $70",
     size: "12 oz.",
     image: "/menu/chocolate.jpg",
   },
@@ -66,8 +73,7 @@ const menuItems = [
     id: 7,
     category: "especiales",
     name: "Horchata",
-    description:
-      "Bebida de horchata con un toque canela y leche cremada a tu elección. | Caliente: $75 · Frío: $70",
+    description: "Bebida cremosa con sabor tradicional de horchata. Caliente: $75 · Frío: $70",
     size: "12 oz.",
     image: "/menu/horchata.jpg",
   },
@@ -75,8 +81,7 @@ const menuItems = [
     id: 8,
     category: "especiales",
     name: "Taro",
-    description:
-      "Bebida a base de raíz de taro con leche cremada (entera o deslactosada). | Caliente: $75 · Frío: $70",
+    description: "Bebida cremosa con el sabor característico del taro. Caliente: $75 · Frío: $70",
     size: "12 oz.",
     image: "/menu/taro.jpg",
   },
@@ -84,8 +89,7 @@ const menuItems = [
     id: 9,
     category: "especiales",
     name: "Chai Latte",
-    description:
-      "Mezcla de especias con leche cremada (entera o deslactosada). | Caliente: $75 · Frío: $70",
+    description: "Mezcla aromática de especias con leche cremosa. Caliente: $75 · Frío: $70",
     size: "12 oz.",
     image: "/menu/chai.jpg",
   },
@@ -93,140 +97,150 @@ const menuItems = [
     id: 10,
     category: "especiales",
     name: "Matcha Latte",
-    description:
-      "Té verde molido de origen japonés + leche cremada (entera o deslactosada). | Caliente: $75 · Frío: $70",
+    description: "Té verde matcha combinado con leche cremosa. Caliente: $75 · Frío: $70",
     size: "12 oz.",
     image: "/menu/matcha.jpg",
   },
 
+  // ========================================
   // FRAPPÉS
+  // ========================================
+
   {
-    id: 41,
+    id: 11,
     category: "frappes",
-    name: "Frappé de Cappuccino",
-    description: "Café espresso, leche y hielo frappé.",
+    name: "Frappé Cappuccino",
+    description: "Café cappuccino mezclado con leche y hielo.",
     size: "16 oz.",
-    price: 0,
     image: "/menu/frappe-cappuccino.jpg",
   },
   {
-    id: 42,
+    id: 12,
     category: "frappes",
-    name: "Frappé de Moka",
-    description: "Café espresso, chocolate y hielo frappé.",
+    name: "Frappé Moka",
+    description: "Combinación de café, chocolate y hielo.",
     size: "16 oz.",
-    price: 0,
     image: "/menu/frappe-moka.jpg",
   },
   {
-    id: 43,
+    id: 13,
     category: "frappes",
-    name: "Frappé de Caramelo",
-    description: "Café espresso, caramelo, leche y hielo frappé.",
+    name: "Frappé Caramelo",
+    description: "Bebida helada de café con caramelo.",
     size: "16 oz.",
-    price: 0,
     image: "/menu/frappe-caramelo.jpg",
   },
   {
-    id: 44,
+    id: 14,
     category: "frappes",
-    name: "Frappé de Chocolate",
-    description: "Chocolate de la casa, leche y hielo frappé.",
+    name: "Frappé Chocolate",
+    description: "Chocolate cremoso mezclado con hielo.",
     size: "16 oz.",
-    price: 0,
     image: "/menu/frappe-chocolate.jpg",
   },
   {
-    id: 45,
+    id: 15,
     category: "frappes",
-    name: "Frappé de Horchata",
-    description: "Horchata, leche y hielo frappé.",
+    name: "Frappé Horchata",
+    description: "El sabor tradicional de horchata en una bebida helada.",
     size: "16 oz.",
-    price: 0,
     image: "/menu/frappe-horchata.jpg",
   },
   {
-    id: 46,
+    id: 16,
     category: "frappes",
-    name: "Frappé de Taro",
-    description: "Taro, leche y hielo frappé.",
+    name: "Frappé Taro",
+    description: "Bebida helada con el delicioso sabor del taro.",
     size: "16 oz.",
-    price: 0,
     image: "/menu/frappe-taro.jpg",
   },
   {
-    id: 47,
+    id: 17,
     category: "frappes",
-    name: "Frappé de Chai",
-    description: "Mezcla de especias chai, leche y hielo frappé.",
+    name: "Frappé Chai",
+    description: "Mezcla de especias, leche y hielo.",
     size: "16 oz.",
-    price: 0,
     image: "/menu/frappe-chai.jpg",
   },
   {
-    id: 48,
+    id: 18,
     category: "frappes",
-    name: "Frappé de Matcha",
-    description: "Té verde matcha, leche y hielo frappé.",
+    name: "Frappé Matcha",
+    description: "Matcha con leche y hielo.",
     size: "16 oz.",
-    price: 0,
     image: "/menu/frappe-matcha.jpg",
   },
 
+  // ========================================
   // TISANAS
+  // ========================================
+
   {
-    id: 11,
-    category: "tisanes",
-    name: "Tisana",
-    description:
-      "Infusión frutal con frutos deshidratados y agua caliente.",
+    id: 19,
+    category: "tisanas",
+    name: "Tisana de Frutas",
+    description: "Infusión aromática de frutas.",
     size: "12 oz.",
     price: 65,
     image: "/menu/tisana.jpg",
   },
 
+  // ========================================
   // BEBIDAS FRÍAS
+  // ========================================
+
   {
-    id: 12,
+    id: 20,
     category: "frias",
-    name: "Limonada o Naranjada",
-    description: "Bebida natural preparada al momento.",
-    size: "12 oz.",
+    name: "Limonada",
+    description: "Refrescante bebida preparada con limón.",
+    size: "16 oz.",
     price: 50,
     image: "/menu/limonada.jpg",
   },
   {
-    id: 13,
+    id: 21,
+    category: "frias",
+    name: "Naranjada",
+    description: "Refrescante bebida preparada con naranja.",
+    size: "16 oz.",
+    price: 50,
+    image: "/menu/naranjada.jpg",
+  },
+  {
+    id: 22,
     category: "frias",
     name: "Soda Italiana",
-    description: "Popping pearls + sabor + agua mineral.",
+    description: "Bebida refrescante con sabores frutales.",
     size: "16 oz.",
     price: 85,
     image: "/menu/soda-italiana.jpg",
   },
   {
-    id: 14,
+    id: 23,
     category: "frias",
-    name: "Granizados",
-    description:
-      "Pulpa de fruta + agua fría + hielo frappé, acompañado con chamoy, picafresa, skwinkles .",
+    name: "Granizado",
+    description: "Bebida refrescante con hielo triturado.",
     size: "16 oz.",
     price: 80,
     image: "/menu/granizado.jpg",
   },
   {
-    id: 15,
+    id: 24,
     category: "frias",
-    name: "Smoothie Frutal",
-    description: "Pulpa de fruta + agua fría + hielo frappé.",
+    name: "Smoothie",
+    description: "Bebida frutal de textura suave y cremosa.",
     size: "16 oz.",
     price: 75,
     image: "/menu/smoothie.jpg",
   },
 
-  // PANADERÍA - CROISSANTS
+  // ========================================
+  // PANADERÍA — CROISSANTS
+  // ========================================
+
   {
-    id: 16,
+    id: 25,
     category: "panaderia",
     subcategory: "croissants",
     name: "Croissant Natural",
@@ -235,7 +249,7 @@ const menuItems = [
     image: "/menu/croissant-natural.jpg",
   },
   {
-    id: 17,
+    id: 26,
     category: "panaderia",
     subcategory: "croissants",
     name: "Croissant Nutella",
@@ -244,675 +258,954 @@ const menuItems = [
     image: "/menu/croissant-nutella.jpg",
   },
   {
-    id: 18,
-    category: "panaderia",
-    subcategory: "croissants",
-    name: "Croissant Pistache",
-    description: "Croissant artesanal con pistache.",
-    price: 75,
-    image: "/menu/croissant-pistache.jpg",
-  },
-  {
-    id: 19,
-    category: "panaderia",
-    subcategory: "croissants",
-    name: "Croissant Chocolate Turin",
-    description: "Croissant artesanal con chocolate Turin.",
-    price: 80,
-    image: "/menu/croissant-chocolate.jpg",
-  },
-  {
-    id: 20,
-    category: "panaderia",
-    subcategory: "croissants",
-    name: "Croissant Dulce de Leche y Almendra",
-    description: "Croissant con dulce de leche y almendra.",
-    price: 75,
-    image: "/menu/croissant-dulce-leche.jpg",
-  },
-  {
     id: 27,
     category: "panaderia",
     subcategory: "croissants",
-    name: "Croissant de Almendra",
-    description: "Croissant artesanal con almendra.",
-    price: 80,
-    image: "/menu/croissant-almendra.jpg",
+    name: "Croissant Pistache",
+    description: "Croissant artesanal con crema de pistache.",
+    price: 75,
+    image: "/menu/croissant-pistache.jpg",
   },
   {
     id: 28,
     category: "panaderia",
     subcategory: "croissants",
-    name: "Croissant de Frutos Rojos y Matcha",
-    description: "Croissant artesanal con frutos rojos y matcha.",
-    price: 75,
-    image: "/menu/croissant-matcha.jpg",
+    name: "Croissant Chocolate Turin",
+    description: "Croissant relleno de chocolate.",
+    price: 80,
+    image: "/menu/croissant-chocolate.jpg",
   },
-
-  // PANADERÍA - ROLES
+  {
+    id: 29,
+    category: "panaderia",
+    subcategory: "croissants",
+    name: "Croissant Dulce de Leche y Almendra",
+    description: "Croissant con dulce de leche y almendras.",
+    price: 75,
+    image: "/menu/croissant-dulce-leche.jpg",
+  },
   {
     id: 30,
     category: "panaderia",
+    subcategory: "croissants",
+    name: "Croissant Almendra",
+    description: "Croissant artesanal con almendras.",
+    price: 80,
+    image: "/menu/croissant-almendra.jpg",
+  },
+  {
+    id: 31,
+    category: "panaderia",
+    subcategory: "croissants",
+    name: "Croissant Frutos Rojos y Matcha",
+    description: "Croissant con frutos rojos y matcha.",
+    price: 75,
+    image: "/menu/croissant-frutos-rojos.jpg",
+  },
+
+  // ========================================
+  // PANADERÍA — ROLES
+  // ========================================
+
+  {
+    id: 32,
+    category: "panaderia",
     subcategory: "roles",
     name: "Rol de Guayaba y Queso Crema",
-    description: "Rol artesanal de guayaba y queso crema.",
+    description: "Rol artesanal con guayaba y queso crema.",
     price: 70,
     image: "/menu/rol-guayaba.jpg",
   },
   {
-    id: 49,
+    id: 33,
     category: "panaderia",
     subcategory: "roles",
     name: "Rol de Oreo",
-    description: "Rol de canela con Oreo.",
+    description: "Rol de canela acompañado de Oreo.",
     image: "/menu/rol-oreo.jpg",
   },
   {
-    id: 50,
+    id: 34,
     category: "panaderia",
     subcategory: "roles",
     name: "Rol de Nutella",
-    description: "Rol de canela con Nutella.",
+    description: "Rol de canela con crema de avellanas.",
     image: "/menu/rol-nutella.jpg",
   },
   {
-    id: 51,
+    id: 35,
     category: "panaderia",
     subcategory: "roles",
     name: "Rol de Dulce de Leche con Nuez",
-    description: "Rol de canela con dulce de leche y nuez.",
+    description: "Rol con dulce de leche y nueces.",
     image: "/menu/rol-dulce-leche.jpg",
   },
   {
-    id: 52,
+    id: 36,
     category: "panaderia",
     subcategory: "roles",
     name: "Rol de Fresas",
-    description: "Rol de canela con fresas.",
+    description: "Rol de canela acompañado de fresas.",
     image: "/menu/rol-fresas.jpg",
   },
   {
-    id: 53,
+    id: 37,
     category: "panaderia",
     subcategory: "roles",
     name: "Rol de Fresas con Nutella",
-    description: "Rol de canela con fresas y Nutella.",
+    description: "Rol con fresas y crema de avellanas.",
     image: "/menu/rol-fresas-nutella.jpg",
   },
 
-  // PANADERÍA - MUFFINS
+  // ========================================
+  // PANADERÍA — MUFFINS
+  // ========================================
+
   {
-    id: 31,
+    id: 38,
     category: "panaderia",
     subcategory: "muffins",
     name: "Muffin de Ate con Queso",
-    description: "Muffin artesanal de ate con queso.",
+    description: "Muffin con ate y queso.",
     price: 60,
     image: "/menu/muffin-ate.jpg",
   },
   {
-    id: 32,
+    id: 39,
     category: "panaderia",
     subcategory: "muffins",
-    name: "Muffin de Limón con semilla de amapola",
+    name: "Muffin Limón Poppy Seeds",
     description: "Muffin de limón con semillas de amapola.",
     price: 60,
     image: "/menu/muffin-limon.jpg",
   },
   {
-    id: 33,
+    id: 40,
     category: "panaderia",
     subcategory: "muffins",
-    name: "Muffin de Manzana con Nuez pecana",
+    name: "Muffin Manzana con Nuez Pecana",
     description: "Muffin de manzana con nuez pecana.",
     price: 65,
     image: "/menu/muffin-manzana.jpg",
   },
   {
-    id: 34,
+    id: 41,
     category: "panaderia",
     subcategory: "muffins",
-    name: "Muffin de Arándanos, Blueberry y Chocolate Blanco",
-    description: "Muffin de arándanos, blueberry y chocolate blanco.",
+    name: "Muffin Blueberry y Chocolate Blanco",
+    description: "Muffin de arándanos con chocolate blanco.",
     price: 60,
     image: "/menu/muffin-blueberry.jpg",
   },
 
-  // PANADERÍA - OTROS PANES
+  // ========================================
+  // PANADERÍA — OTROS PANES
+  // ========================================
+
   {
-    id: 21,
+    id: 42,
     category: "panaderia",
     subcategory: "otros",
     name: "Chocolatín",
-    description: "Panadería francesa artesanal con chocolate.",
+    description: "Pan de hojaldre con chocolate.",
     price: 70,
     image: "/menu/chocolatin.jpg",
   },
   {
-    id: 22,
+    id: 43,
     category: "panaderia",
     subcategory: "otros",
     name: "Cruffin Crema de Café",
-    description: "Cruffin artesanal relleno de crema de café.",
+    description: "Cruffin relleno de crema de café.",
     price: 77,
     image: "/menu/cruffin.jpg",
   },
   {
-    id: 23,
+    id: 44,
     category: "panaderia",
     subcategory: "otros",
-    name: "Danes de Queso y Blueberry",
-    description: "Dane artesanal con queso y blueberry.",
+    name: "Danés Queso y Blueberry",
+    description: "Pan danés con queso y blueberries.",
     price: 80,
     image: "/menu/danes.jpg",
   },
   {
-    id: 35,
+    id: 45,
     category: "panaderia",
     subcategory: "otros",
     name: "Strudel de Manzana con Nuez",
-    description: "Strudel artesanal de manzana con nuez.",
+    description: "Strudel artesanal de manzana y nuez.",
     size: "150 g.",
     price: 80,
-    image: "/menu/strudel.jpg",
+    image: "/menu/strudel-manzana.jpg",
   },
 
+  // ========================================
   // BEBIDAS CON ALCOHOL
+  // ========================================
+
   {
-    id: 36,
+    id: 46,
     category: "opcionales",
     name: "Carajillo",
-    description: "Espresso de especialidad + Licor 43.",
+    description: "Bebida preparada con espresso y licor.",
     size: "4 oz.",
     price: 120,
     image: "/menu/carajillo.jpg",
   },
   {
-    id: 37,
+    id: 47,
     category: "opcionales",
     name: "Fancy Latte",
-    description:
-      "Espresso de especialidad + leche cremada + shot de Baileys.",
+    description: "Combinación especial de café y licor.",
     size: "8 oz.",
     price: 120,
     image: "/menu/fancy-latte.jpg",
   },
   {
-    id: 38,
+    id: 48,
     category: "opcionales",
     name: "Mimosa",
-    description: "Vino espumoso + jugo de naranja.",
+    description: "Bebida con vino espumoso y jugo de naranja.",
     size: "6 oz.",
     price: 99,
     image: "/menu/mimosa.jpg",
   },
   {
-    id: 39,
+    id: 49,
     category: "opcionales",
     name: "Bellini",
-    description: "Vino espumoso + néctar de durazno.",
+    description: "Bebida con vino espumoso y durazno.",
     size: "6 oz.",
     price: 99,
     image: "/menu/bellini.jpg",
   },
+
 ];
 
+// ==========================================
+// CATEGORÍAS PRINCIPALES
+// ==========================================
+
 const categories = [
-  { id: "todos", name: "Todo" },
-  { id: "cafe", name: "Café" },
-  { id: "especiales", name: "Especiales" },
-  { id: "frappes", name: "Frappés" },
-  { id: "tisanes", name: "Tisanas" },
-  { id: "frias", name: "Bebidas frías" },
-  { id: "panaderia", name: "Panadería" },
+  { id: "todos", name: "TODO" },
+  { id: "cafe", name: "CAFÉ" },
+  { id: "especiales", name: "ESPECIALES" },
+  { id: "frappes", name: "FRAPPÉS" },
+  { id: "tisanas", name: "TISANAS" },
+  { id: "frias", name: "BEBIDAS FRÍAS" },
+  { id: "panaderia", name: "PANADERÍA" },
   { id: "opcionales", name: "BEBIDAS CON ALCOHOL" },
 ];
 
+// ==========================================
+// SUBCATEGORÍAS DE PANADERÍA
+// ==========================================
+
 const bakeryCategories = [
-  { id: "todos", name: "Toda la panadería" },
-  { id: "roles", name: "Roles" },
-  { id: "muffins", name: "Muffins" },
-  { id: "croissants", name: "Croissants" },
-  { id: "otros", name: "Otros panes" },
+  { id: "todos", name: "TODA LA PANADERÍA" },
+  { id: "roles", name: "ROLES" },
+  { id: "muffins", name: "MUFFINS" },
+  { id: "croissants", name: "CROISSANTS" },
+  { id: "otros", name: "OTROS PANES" },
 ];
 
-function App() {
-  const [activeCategory, setActiveCategory] = useState("todos");
-  const [activeBakeryCategory, setActiveBakeryCategory] = useState("todos");
+// ==========================================
+// COMPONENTE PRINCIPAL
+// ==========================================
+
+export default function App() {
+
+  const [activeCategory, setActiveCategory] =
+    useState("todos");
+
+  const [activeBakeryCategory, setActiveBakeryCategory] =
+    useState("todos");
+
+  const [mobileMenuOpen, setMobileMenuOpen] =
+    useState(false);
+
+  // ========================================
+  // FILTRAR PRODUCTOS
+  // ========================================
 
   const filteredItems = menuItems.filter((item) => {
-    if (activeCategory === "todos") {
-      return true;
-    }
 
-    if (item.category !== activeCategory) {
+    if (
+      activeCategory !== "todos" &&
+      item.category !== activeCategory
+    ) {
       return false;
     }
 
     if (
       activeCategory === "panaderia" &&
-      activeBakeryCategory !== "todos"
+      activeBakeryCategory !== "todos" &&
+      item.subcategory !== activeBakeryCategory
     ) {
-      return item.subcategory === activeBakeryCategory;
+      return false;
     }
 
     return true;
+
   });
 
-  const featured = menuItems.slice(0, 4);
+  // ========================================
+  // CAMBIAR CATEGORÍA
+  // ========================================
+
+  const changeCategory = (category) => {
+    setActiveCategory(category);
+    setActiveBakeryCategory("todos");
+  };
+
+  // ========================================
+  // IR A UNA SECCIÓN
+  // ========================================
 
   const scrollTo = (id) => {
-    document.getElementById(id)?.scrollIntoView({
-      behavior: "smooth",
-    });
+
+    const section = document.getElementById(id);
+
+    if (section) {
+      section.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+
+    setMobileMenuOpen(false);
+
   };
 
   return (
-    <div className="site">
 
-      {/* HEADER */}
+    <div className="app">
+
+      {/* ==================================
+          HEADER
+      ================================== */}
+
       <header className="header">
-        <div className="header-inner">
-          <button className="logo" onClick={() => scrollTo("inicio")}>
-            18<span>&</span>18
-          </button>
 
-          <nav className="nav">
-            <button onClick={() => scrollTo("inicio")}>Inicio</button>
-            <button onClick={() => scrollTo("nosotros")}>Nosotros</button>
-            <button onClick={() => scrollTo("menu")}>Menú</button>
-            <button onClick={() => scrollTo("galeria")}>Galería</button>
-            <button onClick={() => scrollTo("ubicacion")}>Ubicación</button>
-            <button onClick={() => scrollTo("contacto")}>Contacto</button>
-          </nav>
+        <div className="header-container">
+
+          <div
+            className="logo"
+            onClick={() => scrollTo("inicio")}
+            style={{ cursor: "pointer" }}
+          >
+            <span className="logo-main">
+              18•18
+            </span>
+
+            <span className="logo-sub">
+              CAFÉ
+            </span>
+          </div>
 
           <button
-            className="header-menu"
-            onClick={() => scrollTo("menu")}
+            className="mobile-toggle"
+            onClick={() =>
+              setMobileMenuOpen(!mobileMenuOpen)
+            }
+            aria-label="Abrir menú"
           >
-            VER MENÚ <span>↗</span>
+            ☰
           </button>
+
+          <nav
+            className={
+              mobileMenuOpen
+                ? "nav nav-open"
+                : "nav"
+            }
+          >
+
+            <a
+              href="#inicio"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              INICIO
+            </a>
+
+            <a
+              href="#nosotros"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              NOSOTROS
+            </a>
+
+            <a
+              href="#menu"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              MENÚ
+            </a>
+
+            <a
+              href="#galeria"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              GALERÍA
+            </a>
+
+            <a
+              href="#ubicacion"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              UBICACIÓN
+            </a>
+
+            <a
+              href="#contacto"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              CONTACTO
+            </a>
+
+          </nav>
+
         </div>
+
       </header>
 
-      {/* HERO */}
-      <main>
+      {/* ==================================
+          INICIO
+      ================================== */}
 
-        <section id="inicio" className="hero">
-          <div className="hero-image"></div>
+      <section id="inicio" className="hero">
 
-          <div className="hero-overlay"></div>
+        <div className="hero-content">
 
-          <div className="hero-content">
-            <p className="eyebrow">CAFÉ · PANADERÍA · EXPERIENCIAS</p>
+          <span className="eyebrow">
+            PUEBLA · MÉXICO
+          </span>
 
-            <h1>
-              El café
-              <br />
-              también es
-              <br />
-              <em>un momento.</em>
-            </h1>
+          <h1>
+            18•18
+            <span>CAFÉ</span>
+          </h1>
 
-            <p className="hero-text">
-              Un espacio para bajar el ritmo, disfrutar un buen café
-              y dejar que el momento se quede contigo.
+          <p className="hero-slogan">
+            DOS FECHAS, UN DESTINO.
+            <br />
+            MUCHOS MOMENTOS POR COINCIDIR.
+          </p>
+
+          <p className="hero-description">
+            Un espacio creado para disfrutar
+            de un buen café, deliciosas bebidas
+            y momentos inolvidables.
+          </p>
+
+          <button
+            className="primary-button"
+            onClick={() => scrollTo("menu")}
+          >
+            CONOCE NUESTRO MENÚ
+          </button>
+
+        </div>
+
+        <div className="hero-image">
+
+          <img
+            src="/images/hero.jpg"
+            alt="18•18 Café"
+            onError={(e) => {
+              e.currentTarget.style.display = "none";
+            }}
+          />
+
+        </div>
+
+      </section>
+
+      {/* ==================================
+          NOSOTROS
+      ================================== */}
+
+      <section
+        id="nosotros"
+        className="about section"
+      >
+
+        <div className="section-heading">
+
+          <span className="eyebrow">
+            NUESTRA ESENCIA
+          </span>
+
+          <h2>
+            Dos fechas, un destino.
+          </h2>
+
+        </div>
+
+        <div className="about-content">
+
+          <div className="about-text">
+
+            <p>
+              18•18 Café nació de una idea
+              sencilla: crear un espacio
+              especial en San Juan Tepulco,
+              donde las personas puedan
+              disfrutar de un café, una bebida
+              favorita o un delicioso postre
+              sin tener que trasladarse
+              a otra comunidad.
             </p>
 
-            <button
-              className="hero-button"
-              onClick={() => scrollTo("menu")}
-            >
-              DESCUBRIR MENÚ <span>↗</span>
-            </button>
+            <p>
+              Su nombre representa dos fechas
+              importantes que coinciden
+              en un mismo número: el 18.
+              Una historia que inspira
+              la esencia de este proyecto.
+            </p>
+
+            <p>
+              Más que una cafetería,
+              buscamos ser un lugar donde
+              las personas compartan
+              conversaciones, sonrisas
+              y momentos especiales.
+            </p>
+
           </div>
 
-          <div className="hero-bottom">
-            <span>PUEBLA · MÉXICO</span>
-            <span>SCROLL ↓</span>
+          <div className="about-quote">
+
+            <span>18•18</span>
+
+            <h3>
+              Let coffee
+              <br />
+              connect us.
+            </h3>
+
+            <p>
+              Cada taza cuenta una historia.
+            </p>
+
           </div>
 
-          <div className="hero-mark">18 — 18</div>
-        </section>
+        </div>
 
-        {/* INTRO */}
-        <section id="nosotros" className="intro section">
-          <div className="section-number">01</div>
+      </section>
 
-          <div className="intro-grid">
-            <div>
-              <p className="eyebrow dark">NUESTRA ESENCIA</p>
-              <h2>
-                Hecho para
-                <br />
-                <em>quedarte.</em>
-              </h2>
-            </div>
+      {/* ==================================
+          FAVORITOS DE LA CASA
+      ================================== */}
 
-            <div className="intro-copy">
-              <p>
-                En 18&18 creemos que una cafetería es mucho más que
-                una bebida. Es una pausa, una conversación, una reunión
-                o simplemente ese momento que decides regalarte.
-              </p>
+      <section className="featured section">
 
-              <p>
-                Seleccionamos café de especialidad, panadería artesanal
-                y bebidas pensadas para acompañar cada visita.
-              </p>
+        <div className="section-heading">
 
-              <button
-                className="text-button"
-                onClick={() => scrollTo("menu")}
-              >
-                CONOCE NUESTRO MENÚ <span>→</span>
-              </button>
-            </div>
-          </div>
-        </section>
+          <span className="eyebrow">
+            HECHO CON CARIÑO
+          </span>
 
-        {/* FEATURED */}
-        <section className="featured section">
-          <div className="section-top">
-            <div>
-              <p className="eyebrow dark">PARA EMPEZAR</p>
-              <h2>Favoritos de la casa</h2>
-            </div>
+          <h2>
+            Favoritos de la casa
+          </h2>
 
-            <span className="section-index">02 / 07</span>
-          </div>
+          <p>
+            Sabores especiales para
+            disfrutar cada momento.
+          </p>
 
-          <div className="featured-grid">
-            {featured.map((item, index) => (
+        </div>
+
+        <div className="featured-grid">
+
+          {menuItems
+            .filter((item) =>
+              [3, 5, 8].includes(item.id)
+            )
+            .map((item) => (
+
               <article
-                className={`featured-card card-${index + 1}`}
                 key={item.id}
+                className="featured-card"
               >
+
                 <div className="featured-image">
+
                   <img
                     src={item.image}
                     alt={item.name}
+                    loading="lazy"
                     onError={(e) => {
                       e.currentTarget.style.display = "none";
                     }}
                   />
-                  <span>0{index + 1}</span>
+
                 </div>
 
                 <div className="featured-info">
-                  <div>
-                    <h3>{item.name}</h3>
-                    <p>{item.description}</p>
-                  </div>
 
-                  {item.price !== undefined && (
-                    <strong>${item.price}</strong>
+                  <h3>{item.name}</h3>
+
+                  <p>{item.description}</p>
+
+                  {item.price != null && (
+                    <strong>
+                      ${item.price}
+                    </strong>
                   )}
+
                 </div>
+
               </article>
+
             ))}
-          </div>
-        </section>
 
-        {/* STATEMENT */}
-        <section className="statement">
-          <div className="statement-image"></div>
+        </div>
 
-          <div className="statement-content">
-            <p className="eyebrow">UNA PAUSA BIEN HECHA</p>
-            <h2>
-              Tómate
-              <br />
-              el <em>tiempo.</em>
-            </h2>
-          </div>
-        </section>
+      </section>
 
-        {/* MENU */}
-        <section id="menu" className="menu-section section">
-          <div className="section-number">03</div>
+      {/* ==================================
+          FRASE
+      ================================== */}
 
-          <div className="menu-heading">
-            <div>
-              <p className="eyebrow dark">NUESTRO MENÚ</p>
-              <h2>
-                Algo para
-                <br />
-                <em>cada momento.</em>
-              </h2>
-            </div>
+      <section className="statement">
 
-            <p className="menu-intro">
-              Café de especialidad, bebidas frías, creaciones de la
-              casa y panadería artesanal.
-            </p>
-          </div>
+        <div className="statement-content">
 
-          {/* CATEGORÍAS PRINCIPALES */}
-          <div className="categories">
-            {categories.map((category) => (
+          <span>
+            18•18 CAFÉ
+          </span>
+
+          <h2>
+            Un café,
+            <br />
+            mil momentos.
+          </h2>
+
+          <p>
+            Hecho para compartir.
+          </p>
+
+        </div>
+
+      </section>
+
+      {/* ==================================
+          MENÚ
+      ================================== */}
+
+      <section
+        id="menu"
+        className="menu-section section"
+      >
+
+        <div className="section-heading">
+
+          <span className="eyebrow">
+            DESCUBRE NUESTROS SABORES
+          </span>
+
+          <h2>
+            Nuestro Menú
+          </h2>
+
+          <p>
+            Bebidas preparadas con cariño
+            y deliciosos postres para acompañar.
+          </p>
+
+        </div>
+
+        {/* CATEGORÍAS PRINCIPALES */}
+
+        <div className="categories">
+
+          {categories.map((category) => (
+
+            <button
+              key={category.id}
+              className={
+                activeCategory === category.id
+                  ? "active"
+                  : ""
+              }
+              onClick={() =>
+                changeCategory(category.id)
+              }
+            >
+              {category.name}
+            </button>
+
+          ))}
+
+        </div>
+
+        {/* SUBCATEGORÍAS PANADERÍA */}
+
+        {activeCategory === "panaderia" && (
+
+          <div className="categories bakery-categories">
+
+            {bakeryCategories.map((category) => (
+
               <button
                 key={category.id}
                 className={
-                  activeCategory === category.id ? "active" : ""
+                  activeBakeryCategory === category.id
+                    ? "active"
+                    : ""
                 }
-                onClick={() => {
-                  setActiveCategory(category.id);
-
-                  if (category.id === "panaderia") {
-                    setActiveBakeryCategory("todos");
-                  }
-                }}
+                onClick={() =>
+                  setActiveBakeryCategory(category.id)
+                }
               >
                 {category.name}
               </button>
+
             ))}
+
           </div>
 
-          {/* SUBMENÚ DE PANADERÍA */}
-          {activeCategory === "panaderia" && (
-            <div className="categories bakery-categories">
-              {bakeryCategories.map((category) => (
-                <button
-                  key={category.id}
-                  className={
-                    activeBakeryCategory === category.id ? "active" : ""
-                  }
-                  onClick={() => setActiveBakeryCategory(category.id)}
-                >
-                  {category.name}
-                </button>
-              ))}
-            </div>
-          )}
+        )}
 
-          {/* LISTA DE PRODUCTOS */}
-          <div className="menu-list">
-            {filteredItems.map((item) => (
-              <article className="menu-item" key={item.id}>
-                <div className="menu-item-image">
-                  <img
-                    src={item.image}
-                    alt={item.name}
-                    onError={(e) => {
-                      e.currentTarget.style.display = "none";
-                    }}
-                  />
-                </div>
+        {/* LISTADO HORIZONTAL */}
 
-                <div className="menu-item-number">
-                  {String(item.id).padStart(2, "0")}
-                </div>
+        <div className="menu-list">
 
-                <div className="menu-item-content">
-                  <div>
-                    <h3>{item.name}</h3>
-                    <p>{item.description}</p>
+          {filteredItems.map((item) => (
 
-                    {item.size && (
-                      <small>{item.size}</small>
-                    )}
-                  </div>
-
-                  {item.price !== undefined && (
-                    <strong>${item.price}</strong>
-                  )}
-                </div>
-              </article>
-            ))}
-          </div>
-        </section>
-
-        {/* BIG IMAGE */}
-        <section className="big-image-section">
-          <div className="big-image"></div>
-
-          <div className="big-image-caption">
-            <span>18&18</span>
-            <p>CAFÉ · PANADERÍA · EXPERIENCIAS</p>
-          </div>
-        </section>
-
-        {/* GALLERY */}
-        <section id="galeria" className="gallery section">
-          <div className="section-number">04</div>
-
-          <div className="section-top">
-            <div>
-              <p className="eyebrow dark">EL ESPACIO</p>
-              <h2>Un lugar para disfrutar.</h2>
-            </div>
-          </div>
-
-          <div className="gallery-grid">
-            <div className="gallery-image gallery-one"></div>
-            <div className="gallery-image gallery-two"></div>
-            <div className="gallery-image gallery-three"></div>
-            <div className="gallery-image gallery-four"></div>
-            <div className="gallery-image gallery-five"></div>
-          </div>
-        </section>
-
-        {/* REVIEWS */}
-        <section className="reviews section">
-          <div className="section-number">05</div>
-
-          <p className="eyebrow dark">LO QUE DICEN DE NOSOTROS</p>
-
-          <div className="review">
-            <span className="quote">“</span>
-
-            <blockquote>
-              Un lugar para desconectarte un rato, tomar un buen café
-              y disfrutar de algo rico. Todo se siente cuidado hasta
-              el último detalle.
-            </blockquote>
-
-            <div className="review-author">
-              <span></span>
-              <p>VISITA 18&18</p>
-            </div>
-          </div>
-        </section>
-
-        {/* LOCATION */}
-        <section id="ubicacion" className="location">
-          <div className="location-image"></div>
-
-          <div className="location-content">
-            <div className="section-number light">06</div>
-
-            <p className="eyebrow">VISÍTANOS</p>
-
-            <h2>
-              Nos vemos
-              <br />
-              <em>en 18&18.</em>
-            </h2>
-
-            <div className="address">
-              <p>Calle 5 Oriente 400</p>
-              <p>San Juan, Puebla</p>
-              <p>México</p>
-            </div>
-
-            <button
-              className="light-button"
-              onClick={() =>
-                window.open(
-                  "https://www.google.com/maps/search/?api=1&query=Calle+5+Oriente+400+Puebla",
-                  "_blank"
-                )
-              }
+            <article
+              key={item.id}
+              className="menu-item"
             >
-              CÓMO LLEGAR <span>↗</span>
-            </button>
-          </div>
-        </section>
 
-        {/* CONTACT */}
-        <section id="contacto" className="contact section">
-          <div className="section-number">07</div>
+              <div className="menu-item-image">
 
-          <div className="contact-grid">
-            <div>
-              <p className="eyebrow dark">HABLEMOS</p>
+                <img
+                  src={item.image}
+                  alt={item.name}
+                  loading="lazy"
+                  onError={(e) => {
+                    e.currentTarget.style.display = "none";
+                  }}
+                />
 
-              <h2>
-                ¿Nos
-                <br />
-                <em>vemos?</em>
-              </h2>
-            </div>
-
-            <div className="contact-info">
-              <p>
-                Síguenos, escríbenos o simplemente ven a compartir
-                un momento con nosotros.
-              </p>
-
-              <div className="contact-links">
-                <a href="#" onClick={(e) => e.preventDefault()}>
-                  Instagram <span>↗</span>
-                </a>
-
-                <a href="#" onClick={(e) => e.preventDefault()}>
-                  Facebook <span>↗</span>
-                </a>
-
-                <a href="mailto:hola@18y18.com">
-                  hola@18y18.com <span>↗</span>
-                </a>
               </div>
-            </div>
-          </div>
-        </section>
-      </main>
 
-      {/* FOOTER */}
-      <footer className="footer">
-        <div className="footer-top">
-          <div className="footer-logo">18&18</div>
+              <div className="menu-item-number">
+                {String(item.id).padStart(2, "0")}
+              </div>
 
-          <div className="footer-links">
-            <button onClick={() => scrollTo("inicio")}>Inicio</button>
-            <button onClick={() => scrollTo("menu")}>Menú</button>
-            <button onClick={() => scrollTo("galeria")}>Galería</button>
-            <button onClick={() => scrollTo("ubicacion")}>
-              Ubicación
-            </button>
-          </div>
+              <div className="menu-item-info">
+
+                <h3>
+                  {item.name}
+                </h3>
+
+                <p>
+                  {item.description}
+                </p>
+
+                {item.size && (
+                  <span className="menu-item-size">
+                    {item.size}
+                  </span>
+                )}
+
+              </div>
+
+              <div className="menu-item-price">
+
+                {item.price != null && (
+                  <strong>
+                    ${item.price}
+                  </strong>
+                )}
+
+              </div>
+
+            </article>
+
+          ))}
+
         </div>
+
+      </section>
+
+      {/* ==================================
+          GALERÍA
+      ================================== */}
+
+      <section
+        id="galeria"
+        className="gallery section"
+      >
+
+        <div className="section-heading">
+
+          <span className="eyebrow">
+            NUESTROS MOMENTOS
+          </span>
+
+          <h2>
+            Galería
+          </h2>
+
+          <p>
+            Un pequeño vistazo a todo
+            lo que hace especial a 18•18 Café.
+          </p>
+
+        </div>
+
+        <div className="gallery-grid">
+
+          {[1, 2, 3, 4, 5].map((number) => (
+
+            <img
+              key={number}
+              src={`/images/galeria${number}.jpg`}
+              alt={`Galería 18•18 Café ${number}`}
+              loading="lazy"
+              onError={(e) => {
+                e.currentTarget.style.display = "none";
+              }}
+            />
+
+          ))}
+
+        </div>
+
+      </section>
+
+      {/* ==================================
+          UBICACIÓN
+      ================================== */}
+
+      <section
+        id="ubicacion"
+        className="location section"
+      >
+
+        <div className="section-heading">
+
+          <span className="eyebrow">
+            VEN A CONOCERNOS
+          </span>
+
+          <h2>
+            Nuestra Ubicación
+          </h2>
+
+        </div>
+
+        <div className="location-card">
+
+          <h3>
+            18•18 Café
+          </h3>
+
+          <p>
+            San Juan Tepulco,
+            Acajete, Puebla.
+          </p>
+
+          <p>
+            Un lugar para disfrutar
+            de tu bebida favorita.
+          </p>
+
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=San+Juan+Tepulco+Acajete+Puebla"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="primary-button"
+          >
+            VER EN GOOGLE MAPS
+          </a>
+
+        </div>
+
+      </section>
+
+      {/* ==================================
+          CONTACTO
+      ================================== */}
+
+      <section
+        id="contacto"
+        className="contact section"
+      >
+
+        <div className="section-heading">
+
+          <span className="eyebrow">
+            SIGAMOS CONECTADOS
+          </span>
+
+          <h2>
+            Contáctanos
+          </h2>
+
+          <p>
+            Síguenos en nuestras redes
+            sociales y descubre nuestras novedades.
+          </p>
+
+        </div>
+
+        <div className="contact-links">
+
+          <a
+            href="https://www.instagram.com/eighteencafe_/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="primary-button"
+          >
+            INSTAGRAM
+          </a>
+
+        </div>
+
+      </section>
+
+      {/* ==================================
+          FOOTER
+      ================================== */}
+
+      <footer className="footer">
+
+        <div className="footer-logo">
+
+          18•18
+
+          <span>
+            CAFÉ
+          </span>
+
+        </div>
+
+        <p>
+          DOS FECHAS, UN DESTINO.
+          <br />
+          MUCHOS MOMENTOS POR COINCIDIR.
+        </p>
+
+        <p className="footer-location">
+          San Juan Tepulco, Acajete, Puebla.
+        </p>
 
         <div className="footer-bottom">
-          <span>18&18 © 2026</span>
-          <span>CAFÉ · PANADERÍA · EXPERIENCIAS</span>
-          <span>PUEBLA · MÉXICO</span>
+          © {new Date().getFullYear()} 18•18 Café.
+          Todos los derechos reservados.
         </div>
+
       </footer>
 
     </div>
-  );
-}
 
-export default App;
+  );
+
+}
