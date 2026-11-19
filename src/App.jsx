@@ -322,6 +322,7 @@ const menuItems = [
     subcategory: "roles",
     name: "Rol de Oreo",
     description: "Rol de canela acompañado de Oreo.",
+    price: 65,
     image: "/menu/rol-oreo.jpg",
   },
   {
@@ -330,6 +331,7 @@ const menuItems = [
     subcategory: "roles",
     name: "Rol de Nutella",
     description: "Rol de canela con crema de avellanas.",
+    price: 65,
     image: "/menu/rol-nutella.jpg",
   },
   {
@@ -338,6 +340,7 @@ const menuItems = [
     subcategory: "roles",
     name: "Rol de Dulce de Leche con Nuez",
     description: "Rol con dulce de leche y nueces.",
+    price: 70,
     image: "/menu/rol-dulce-leche.jpg",
   },
   {
@@ -346,6 +349,7 @@ const menuItems = [
     subcategory: "roles",
     name: "Rol de Fresas",
     description: "Rol de canela acompañado de fresas.",
+    price: 70,
     image: "/menu/rol-fresas.jpg",
   },
   {
@@ -354,6 +358,7 @@ const menuItems = [
     subcategory: "roles",
     name: "Rol de Fresas con Nutella",
     description: "Rol con fresas y crema de avellanas.",
+    price: 65,
     image: "/menu/rol-fresas-nutella.jpg",
   },
 
