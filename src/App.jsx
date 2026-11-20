@@ -64,7 +64,8 @@ const menuItems = [
     id: 6,
     category: "especiales",
     name: "Chocolate con Leche",
-    description: "Bebida cremosa de chocolate. Caliente: $75 · Frío: $70",
+    description:
+      "Bebida cremosa de chocolate. Caliente: $75 · Frío: $70",
     size: "12 oz.",
     image: "/menu/chocolate.jpg",
   },
@@ -145,7 +146,8 @@ const menuItems = [
     id: 15,
     category: "frappes",
     name: "Frappé Horchata",
-    description: "El sabor tradicional de horchata en una bebida helada.",
+    description:
+      "El sabor tradicional de horchata en una bebida helada.",
     size: "16 oz.",
     image: "/menu/frappe-horchata.jpg",
   },
@@ -324,7 +326,7 @@ const menuItems = [
     category: "panaderia",
     subcategory: "roles",
     name: "Rol de Oreo",
-    description: "Rol de canela con deliciosa cobertura de Oreo.",
+    description: "Rol de canela con cobertura de Oreo.",
     price: 75,
     image: "/menu/rol-oreo.jpg",
   },
@@ -342,7 +344,7 @@ const menuItems = [
     category: "panaderia",
     subcategory: "roles",
     name: "Rol de Nutella con Nuez",
-    description: "Rol de canela con Nutella y trocitos de nuez.",
+    description: "Rol de canela con Nutella y nuez.",
     price: 75,
     image: "/menu/rol-nutella-nuez.jpg",
   },
@@ -360,7 +362,7 @@ const menuItems = [
     category: "panaderia",
     subcategory: "roles",
     name: "Rol de Fresas con Nutella",
-    description: "Rol de canela con fresas frescas y Nutella.",
+    description: "Rol de canela con fresas y Nutella.",
     price: 75,
     image: "/menu/rol-fresas-nutella.jpg",
   },
@@ -387,9 +389,131 @@ const menuItems = [
     category: "panaderia",
     subcategory: "roles",
     name: "Rol de Canela Tradicional",
-    description: "Clásico rol de canela con una deliciosa cobertura.",
+    description: "Clásico rol de canela con cobertura dulce.",
     price: 75,
     image: "/menu/rol-tradicional.jpg",
+  },
+
+  // ========================================
+  // PANADERÍA — GALLETAS ESTILO NYC
+  // ========================================
+
+  {
+    id: 53,
+    category: "panaderia",
+    subcategory: "galletas",
+    name: "Galleta Red Velvet",
+    description: "Galleta estilo NYC con sabor a red velvet.",
+    price: 40,
+    image: "/menu/galleta-red-velvet.jpg",
+  },
+  {
+    id: 54,
+    category: "panaderia",
+    subcategory: "galletas",
+    name: "Galleta Double Chocolate",
+    description: "Galleta estilo NYC con intenso sabor a chocolate.",
+    price: 35,
+    image: "/menu/galleta-double-chocolate.jpg",
+  },
+  {
+    id: 55,
+    category: "panaderia",
+    subcategory: "galletas",
+    name: "Galleta Chispas con Nutella",
+    description: "Galleta con chispas de chocolate y Nutella.",
+    price: 40,
+    image: "/menu/galleta-chispas-nutella.jpg",
+  },
+  {
+    id: 56,
+    category: "panaderia",
+    subcategory: "galletas",
+    name: "Galleta Nutella Kataifi",
+    description: "Galleta con Nutella y kataifi crujiente.",
+    price: 50,
+    image: "/menu/galleta-nutella-kataifi.jpg",
+  },
+  {
+    id: 57,
+    category: "panaderia",
+    subcategory: "galletas",
+    name: "Galleta Cookies and Cream",
+    description: "Galleta con sabor a galletas y crema.",
+    price: 45,
+    image: "/menu/galleta-cookies-cream.jpg",
+  },
+  {
+    id: 58,
+    category: "panaderia",
+    subcategory: "galletas",
+    name: "Galleta Kinder Bueno",
+    description: "Galleta estilo NYC con chocolate Kinder Bueno.",
+    price: 50,
+    image: "/menu/galleta-kinder-bueno.jpg",
+  },
+  {
+    id: 59,
+    category: "panaderia",
+    subcategory: "galletas",
+    name: "Galleta Lotus",
+    description: "Galleta con el sabor característico de Lotus.",
+    price: 55,
+    image: "/menu/galleta-lotus.jpg",
+  },
+  {
+    id: 60,
+    category: "panaderia",
+    subcategory: "galletas",
+    name: "Galleta Cheesecake",
+    description: "Galleta estilo NYC inspirada en el cheesecake.",
+    price: 45,
+    image: "/menu/galleta-cheesecake.jpg",
+  },
+  {
+    id: 61,
+    category: "panaderia",
+    subcategory: "galletas",
+    name: "Galleta Raffaello",
+    description: "Galleta inspirada en los sabores de Raffaello.",
+    price: 55,
+    image: "/menu/galleta-raffaello.jpg",
+  },
+  {
+    id: 62,
+    category: "panaderia",
+    subcategory: "galletas",
+    name: "Galleta Ferrero",
+    description: "Galleta con chocolate y avellana.",
+    price: 60,
+    image: "/menu/galleta-ferrero.jpg",
+  },
+  {
+    id: 63,
+    category: "panaderia",
+    subcategory: "galletas",
+    name: "Galleta Choco Nuez",
+    description: "Galleta de chocolate con trocitos de nuez.",
+    price: 45,
+    image: "/menu/galleta-choco-nuez.jpg",
+  },
+  {
+    id: 64,
+    category: "panaderia",
+    subcategory: "galletas",
+    name: "Galleta Choco Coco",
+    description: "Galleta con chocolate y coco.",
+    price: 45,
+    image: "/menu/galleta-choco-coco.jpg",
+  },
+  {
+    id: 65,
+    category: "panaderia",
+    subcategory: "galletas",
+    name: "Galleta Birthday Cookie",
+    description: "Galleta estilo NYC con un toque dulce y festivo.",
+    price: 40,
+    image: "/menu/galleta-birthday-cookie.jpg",
   },
 
   // ========================================
@@ -476,128 +600,6 @@ const menuItems = [
   },
 
   // ========================================
-  // PANADERÍA — GALLETAS ESTILO NYC
-  // ========================================
-
-  {
-    id: 53,
-    category: "panaderia",
-    subcategory: "galletas",
-    name: "Galleta Red Velvet",
-    description: "Galleta estilo NYC con el delicioso sabor de red velvet.",
-    price: 40,
-    image: "/menu/galleta-red-velvet.jpg",
-  },
-  {
-    id: 54,
-    category: "panaderia",
-    subcategory: "galletas",
-    name: "Galleta Double Chocolate",
-    description: "Galleta estilo NYC con intenso sabor a chocolate.",
-    price: 35,
-    image: "/menu/galleta-double-chocolate.jpg",
-  },
-  {
-    id: 55,
-    category: "panaderia",
-    subcategory: "galletas",
-    name: "Galleta Chispas con Nutella",
-    description: "Galleta con chispas de chocolate y Nutella.",
-    price: 40,
-    image: "/menu/galleta-chispas-nutella.jpg",
-  },
-  {
-    id: 56,
-    category: "panaderia",
-    subcategory: "galletas",
-    name: "Galleta Nutella Kataifi",
-    description: "Galleta estilo NYC con Nutella y kataifi crujiente.",
-    price: 50,
-    image: "/menu/galleta-nutella-kataifi.jpg",
-  },
-  {
-    id: 57,
-    category: "panaderia",
-    subcategory: "galletas",
-    name: "Galleta Cookies and Cream",
-    description: "Galleta con delicioso sabor a galletas y crema.",
-    price: 45,
-    image: "/menu/galleta-cookies-cream.jpg",
-  },
-  {
-    id: 58,
-    category: "panaderia",
-    subcategory: "galletas",
-    name: "Galleta Kinder Bueno",
-    description: "Galleta estilo NYC con chocolate Kinder Bueno.",
-    price: 50,
-    image: "/menu/galleta-kinder-bueno.jpg",
-  },
-  {
-    id: 59,
-    category: "panaderia",
-    subcategory: "galletas",
-    name: "Galleta Lotus",
-    description: "Galleta con el sabor característico de Lotus.",
-    price: 55,
-    image: "/menu/galleta-lotus.jpg",
-  },
-  {
-    id: 60,
-    category: "panaderia",
-    subcategory: "galletas",
-    name: "Galleta Cheesecake",
-    description: "Galleta estilo NYC inspirada en el cheesecake.",
-    price: 45,
-    image: "/menu/galleta-cheesecake.jpg",
-  },
-  {
-    id: 61,
-    category: "panaderia",
-    subcategory: "galletas",
-    name: "Galleta Raffaello",
-    description: "Galleta inspirada en los sabores de Raffaello.",
-    price: 55,
-    image: "/menu/galleta-raffaello.jpg",
-  },
-  {
-    id: 62,
-    category: "panaderia",
-    subcategory: "galletas",
-    name: "Galleta Ferrero",
-    description: "Galleta con chocolate y avellana estilo Ferrero.",
-    price: 60,
-    image: "/menu/galleta-ferrero.jpg",
-  },
-  {
-    id: 63,
-    category: "panaderia",
-    subcategory: "galletas",
-    name: "Galleta Choco Nuez",
-    description: "Galleta de chocolate con trocitos de nuez.",
-    price: 45,
-    image: "/menu/galleta-choco-nuez.jpg",
-  },
-  {
-    id: 64,
-    category: "panaderia",
-    subcategory: "galletas",
-    name: "Galleta Choco Coco",
-    description: "Galleta con una deliciosa combinación de chocolate y coco.",
-    price: 45,
-    image: "/menu/galleta-choco-coco.jpg",
-  },
-  {
-    id: 65,
-    category: "panaderia",
-    subcategory: "galletas",
-    name: "Galleta Birthday Cookie",
-    description: "Galleta estilo NYC con un toque dulce y festivo.",
-    price: 40,
-    image: "/menu/galleta-birthday-cookie.jpg",
-  },
-
-  // ========================================
   // BEBIDAS CON ALCOHOL
   // ========================================
 
@@ -655,13 +657,13 @@ const categories = [
 ];
 
 // ==========================================
-// SUBCATEGORÍAS DE PANADERÍA
+// APARTADOS DENTRO DE PANADERÍA
 // ==========================================
 
 const bakeryCategories = [
   { id: "todos", name: "TODA LA PANADERÍA" },
   { id: "roles", name: "ROLES DE CANELA" },
-  { id: "galletas", name: "GALLETAS NYC" },
+  { id: "galletas", name: "GALLETAS ESTILO NYC" },
   { id: "muffins", name: "MUFFINS" },
   { id: "croissants", name: "CROISSANTS" },
   { id: "otros", name: "OTROS PANES" },
@@ -673,7 +675,8 @@ const bakeryCategories = [
 
 export default function App() {
   const [activeCategory, setActiveCategory] = useState("todos");
-  const [activeBakeryCategory, setActiveBakeryCategory] = useState("todos");
+  const [activeBakeryCategory, setActiveBakeryCategory] =
+    useState("todos");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   // ========================================
@@ -726,14 +729,12 @@ export default function App() {
 
   return (
     <div className="app">
-
       {/* ==================================
           HEADER
       ================================== */}
 
       <header className="header">
         <div className="header-container">
-
           <div
             className="logo"
             onClick={() => scrollTo("inicio")}
@@ -752,26 +753,43 @@ export default function App() {
           </button>
 
           <nav className={mobileMenuOpen ? "nav nav-open" : "nav"}>
-            <a href="#inicio" onClick={() => setMobileMenuOpen(false)}>
+            <a
+              href="#inicio"
+              onClick={() => setMobileMenuOpen(false)}
+            >
               INICIO
             </a>
-            <a href="#nosotros" onClick={() => setMobileMenuOpen(false)}>
+            <a
+              href="#nosotros"
+              onClick={() => setMobileMenuOpen(false)}
+            >
               NOSOTROS
             </a>
-            <a href="#menu" onClick={() => setMobileMenuOpen(false)}>
+            <a
+              href="#menu"
+              onClick={() => setMobileMenuOpen(false)}
+            >
               MENÚ
             </a>
-            <a href="#galeria" onClick={() => setMobileMenuOpen(false)}>
+            <a
+              href="#galeria"
+              onClick={() => setMobileMenuOpen(false)}
+            >
               GALERÍA
             </a>
-            <a href="#ubicacion" onClick={() => setMobileMenuOpen(false)}>
+            <a
+              href="#ubicacion"
+              onClick={() => setMobileMenuOpen(false)}
+            >
               UBICACIÓN
             </a>
-            <a href="#contacto" onClick={() => setMobileMenuOpen(false)}>
+            <a
+              href="#contacto"
+              onClick={() => setMobileMenuOpen(false)}
+            >
               CONTACTO
             </a>
           </nav>
-
         </div>
       </header>
 
@@ -780,7 +798,6 @@ export default function App() {
       ================================== */}
 
       <section id="inicio" className="hero">
-
         <div className="hero-content">
           <span className="eyebrow">PUEBLA · MÉXICO</span>
 
@@ -818,7 +835,6 @@ export default function App() {
             }}
           />
         </div>
-
       </section>
 
       {/* ==================================
@@ -826,55 +842,49 @@ export default function App() {
       ================================== */}
 
       <section id="nosotros" className="about section">
-
         <div className="section-heading">
           <span className="eyebrow">NUESTRA ESENCIA</span>
           <h2>Dos fechas, un destino.</h2>
         </div>
 
         <div className="about-content">
-
           <div className="about-text">
             <p>
-              18•18 Café nació de una idea
-              sencilla: crear un espacio
-              especial en San Juan Tepulco,
-              donde las personas puedan
+              18•18 Café nació de una idea sencilla:
+              crear un espacio especial en San Juan
+              Tepulco, donde las personas puedan
               disfrutar de un café, una bebida
-              favorita o un delicioso postre
-              sin tener que trasladarse
-              a otra comunidad.
+              favorita o un delicioso postre sin
+              tener que trasladarse a otra comunidad.
             </p>
 
             <p>
               Su nombre representa dos fechas
-              importantes que coinciden
-              en un mismo número: el 18.
-              Una historia que inspira
-              la esencia de este proyecto.
+              importantes que coinciden en un
+              mismo número: el 18. Una historia
+              que inspira la esencia de este proyecto.
             </p>
 
             <p>
-              Más que una cafetería,
-              buscamos ser un lugar donde
-              las personas compartan
-              conversaciones, sonrisas
-              y momentos especiales.
+              Más que una cafetería, buscamos ser
+              un lugar donde las personas compartan
+              conversaciones, sonrisas y momentos
+              especiales.
             </p>
           </div>
 
           <div className="about-quote">
             <span>18•18</span>
+
             <h3>
               Let coffee
               <br />
               connect us.
             </h3>
+
             <p>Cada taza cuenta una historia.</p>
           </div>
-
         </div>
-
       </section>
 
       {/* ==================================
@@ -882,7 +892,6 @@ export default function App() {
       ================================== */}
 
       <section className="featured section">
-
         <div className="section-heading">
           <span className="eyebrow">HECHO CON CARIÑO</span>
           <h2>Favoritos de la casa</h2>
@@ -894,7 +903,6 @@ export default function App() {
             .filter((item) => [3, 5, 8].includes(item.id))
             .map((item) => (
               <article key={item.id} className="featured-card">
-
                 <div className="featured-image">
                   <img
                     src={item.image}
@@ -914,11 +922,9 @@ export default function App() {
                     <strong>${item.price}</strong>
                   )}
                 </div>
-
               </article>
             ))}
         </div>
-
       </section>
 
       {/* ==================================
@@ -928,11 +934,13 @@ export default function App() {
       <section className="statement">
         <div className="statement-content">
           <span>18•18 CAFÉ</span>
+
           <h2>
             Un café,
             <br />
             mil momentos.
           </h2>
+
           <p>Hecho para compartir.</p>
         </div>
       </section>
@@ -942,10 +950,13 @@ export default function App() {
       ================================== */}
 
       <section id="menu" className="menu-section section">
-
         <div className="section-heading">
-          <span className="eyebrow">DESCUBRE NUESTROS SABORES</span>
+          <span className="eyebrow">
+            DESCUBRE NUESTROS SABORES
+          </span>
+
           <h2>Nuestro Menú</h2>
+
           <p>
             Bebidas preparadas con cariño
             y deliciosos postres para acompañar.
@@ -959,7 +970,9 @@ export default function App() {
             <button
               key={category.id}
               className={
-                activeCategory === category.id ? "active" : ""
+                activeCategory === category.id
+                  ? "active"
+                  : ""
               }
               onClick={() => changeCategory(category.id)}
             >
@@ -968,7 +981,7 @@ export default function App() {
           ))}
         </div>
 
-        {/* SUBCATEGORÍAS DE PANADERÍA */}
+        {/* APARTADOS DE PANADERÍA */}
 
         {activeCategory === "panaderia" && (
           <div className="categories bakery-categories">
@@ -976,9 +989,13 @@ export default function App() {
               <button
                 key={category.id}
                 className={
-                  activeBakeryCategory === category.id ? "active" : ""
+                  activeBakeryCategory === category.id
+                    ? "active"
+                    : ""
                 }
-                onClick={() => setActiveBakeryCategory(category.id)}
+                onClick={() =>
+                  setActiveBakeryCategory(category.id)
+                }
               >
                 {category.name}
               </button>
@@ -986,12 +1003,11 @@ export default function App() {
           </div>
         )}
 
-        {/* LISTADO HORIZONTAL DE PRODUCTOS */}
+        {/* LISTADO HORIZONTAL */}
 
         <div className="menu-list">
           {filteredItems.map((item) => (
             <article key={item.id} className="menu-item">
-
               <div className="menu-item-image">
                 <img
                   src={item.image}
@@ -1023,11 +1039,9 @@ export default function App() {
                   <strong>${item.price}</strong>
                 )}
               </div>
-
             </article>
           ))}
         </div>
-
       </section>
 
       {/* ==================================
@@ -1035,10 +1049,10 @@ export default function App() {
       ================================== */}
 
       <section id="galeria" className="gallery section">
-
         <div className="section-heading">
           <span className="eyebrow">NUESTROS MOMENTOS</span>
           <h2>Galería</h2>
+
           <p>
             Un pequeño vistazo a todo
             lo que hace especial a 18•18 Café.
@@ -1058,7 +1072,6 @@ export default function App() {
             />
           ))}
         </div>
-
       </section>
 
       {/* ==================================
@@ -1066,7 +1079,6 @@ export default function App() {
       ================================== */}
 
       <section id="ubicacion" className="location section">
-
         <div className="section-heading">
           <span className="eyebrow">VEN A CONOCERNOS</span>
           <h2>Nuestra Ubicación</h2>
@@ -1075,10 +1087,7 @@ export default function App() {
         <div className="location-card">
           <h3>18•18 Café</h3>
 
-          <p>
-            San Juan Tepulco,
-            Acajete, Puebla.
-          </p>
+          <p>San Juan Tepulco, Acajete, Puebla.</p>
 
           <p>
             Un lugar para disfrutar
@@ -1094,7 +1103,6 @@ export default function App() {
             VER EN GOOGLE MAPS
           </a>
         </div>
-
       </section>
 
       {/* ==================================
@@ -1102,10 +1110,10 @@ export default function App() {
       ================================== */}
 
       <section id="contacto" className="contact section">
-
         <div className="section-heading">
           <span className="eyebrow">SIGAMOS CONECTADOS</span>
           <h2>Contáctanos</h2>
+
           <p>
             Síguenos en nuestras redes
             sociales y descubre nuestras novedades.
@@ -1122,7 +1130,6 @@ export default function App() {
             INSTAGRAM
           </a>
         </div>
-
       </section>
 
       {/* ==================================
@@ -1130,7 +1137,6 @@ export default function App() {
       ================================== */}
 
       <footer className="footer">
-
         <div className="footer-logo">
           18•18
           <span>CAFÉ</span>
@@ -1150,9 +1156,7 @@ export default function App() {
           © {new Date().getFullYear()} 18•18 Café.
           Todos los derechos reservados.
         </div>
-
       </footer>
-
     </div>
   );
 }
