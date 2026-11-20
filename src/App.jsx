@@ -6,7 +6,6 @@ import "./App.css";
 // ==========================================
 
 const menuItems = [
-
   // ========================================
   // CAFÉ
   // ========================================
@@ -73,7 +72,8 @@ const menuItems = [
     id: 7,
     category: "especiales",
     name: "Horchata",
-    description: "Bebida cremosa con sabor tradicional de horchata. Caliente: $75 · Frío: $70",
+    description:
+      "Bebida cremosa con sabor tradicional de horchata. Caliente: $75 · Frío: $70",
     size: "12 oz.",
     image: "/menu/horchata.jpg",
   },
@@ -81,7 +81,8 @@ const menuItems = [
     id: 8,
     category: "especiales",
     name: "Taro",
-    description: "Bebida cremosa con el sabor característico del taro. Caliente: $75 · Frío: $70",
+    description:
+      "Bebida cremosa con el sabor característico del taro. Caliente: $75 · Frío: $70",
     size: "12 oz.",
     image: "/menu/taro.jpg",
   },
@@ -89,7 +90,8 @@ const menuItems = [
     id: 9,
     category: "especiales",
     name: "Chai Latte",
-    description: "Mezcla aromática de especias con leche cremosa. Caliente: $75 · Frío: $70",
+    description:
+      "Mezcla aromática de especias con leche cremosa. Caliente: $75 · Frío: $70",
     size: "12 oz.",
     image: "/menu/chai.jpg",
   },
@@ -97,7 +99,8 @@ const menuItems = [
     id: 10,
     category: "especiales",
     name: "Matcha Latte",
-    description: "Té verde matcha combinado con leche cremosa. Caliente: $75 · Frío: $70",
+    description:
+      "Té verde matcha combinado con leche cremosa. Caliente: $75 · Frío: $70",
     size: "12 oz.",
     image: "/menu/matcha.jpg",
   },
@@ -304,7 +307,7 @@ const menuItems = [
   },
 
   // ========================================
-  // PANADERÍA — ROLES
+  // PANADERÍA — ROLES DE CANELA
   // ========================================
 
   {
@@ -321,8 +324,8 @@ const menuItems = [
     category: "panaderia",
     subcategory: "roles",
     name: "Rol de Oreo",
-    description: "Rol de canela acompañado de Oreo.",
-    price: 65,
+    description: "Rol de canela con deliciosa cobertura de Oreo.",
+    price: 75,
     image: "/menu/rol-oreo.jpg",
   },
   {
@@ -330,18 +333,18 @@ const menuItems = [
     category: "panaderia",
     subcategory: "roles",
     name: "Rol de Nutella",
-    description: "Rol de canela con crema de avellanas.",
-    price: 65,
+    description: "Rol de canela con cremosa Nutella.",
+    price: 75,
     image: "/menu/rol-nutella.jpg",
   },
   {
     id: 35,
     category: "panaderia",
     subcategory: "roles",
-    name: "Rol de Dulce de Leche con Nuez",
-    description: "Rol con dulce de leche y nueces.",
-    price: 70,
-    image: "/menu/rol-dulce-leche.jpg",
+    name: "Rol de Nutella con Nuez",
+    description: "Rol de canela con Nutella y trocitos de nuez.",
+    price: 75,
+    image: "/menu/rol-nutella-nuez.jpg",
   },
   {
     id: 36,
@@ -349,7 +352,7 @@ const menuItems = [
     subcategory: "roles",
     name: "Rol de Fresas",
     description: "Rol de canela acompañado de fresas.",
-    price: 70,
+    price: 75,
     image: "/menu/rol-fresas.jpg",
   },
   {
@@ -357,9 +360,36 @@ const menuItems = [
     category: "panaderia",
     subcategory: "roles",
     name: "Rol de Fresas con Nutella",
-    description: "Rol con fresas y crema de avellanas.",
-    price: 65,
+    description: "Rol de canela con fresas frescas y Nutella.",
+    price: 75,
     image: "/menu/rol-fresas-nutella.jpg",
+  },
+  {
+    id: 50,
+    category: "panaderia",
+    subcategory: "roles",
+    name: "Rol de Lotus",
+    description: "Rol de canela con crema de galleta Lotus.",
+    price: 75,
+    image: "/menu/rol-lotus.jpg",
+  },
+  {
+    id: 51,
+    category: "panaderia",
+    subcategory: "roles",
+    name: "Rol de Mermelada de Frutos Rojos",
+    description: "Rol de canela con mermelada de frutos rojos.",
+    price: 75,
+    image: "/menu/rol-frutos-rojos.jpg",
+  },
+  {
+    id: 52,
+    category: "panaderia",
+    subcategory: "roles",
+    name: "Rol de Canela Tradicional",
+    description: "Clásico rol de canela con una deliciosa cobertura.",
+    price: 75,
+    image: "/menu/rol-tradicional.jpg",
   },
 
   // ========================================
@@ -446,6 +476,128 @@ const menuItems = [
   },
 
   // ========================================
+  // PANADERÍA — GALLETAS ESTILO NYC
+  // ========================================
+
+  {
+    id: 53,
+    category: "panaderia",
+    subcategory: "galletas",
+    name: "Galleta Red Velvet",
+    description: "Galleta estilo NYC con el delicioso sabor de red velvet.",
+    price: 40,
+    image: "/menu/galleta-red-velvet.jpg",
+  },
+  {
+    id: 54,
+    category: "panaderia",
+    subcategory: "galletas",
+    name: "Galleta Double Chocolate",
+    description: "Galleta estilo NYC con intenso sabor a chocolate.",
+    price: 35,
+    image: "/menu/galleta-double-chocolate.jpg",
+  },
+  {
+    id: 55,
+    category: "panaderia",
+    subcategory: "galletas",
+    name: "Galleta Chispas con Nutella",
+    description: "Galleta con chispas de chocolate y Nutella.",
+    price: 40,
+    image: "/menu/galleta-chispas-nutella.jpg",
+  },
+  {
+    id: 56,
+    category: "panaderia",
+    subcategory: "galletas",
+    name: "Galleta Nutella Kataifi",
+    description: "Galleta estilo NYC con Nutella y kataifi crujiente.",
+    price: 50,
+    image: "/menu/galleta-nutella-kataifi.jpg",
+  },
+  {
+    id: 57,
+    category: "panaderia",
+    subcategory: "galletas",
+    name: "Galleta Cookies and Cream",
+    description: "Galleta con delicioso sabor a galletas y crema.",
+    price: 45,
+    image: "/menu/galleta-cookies-cream.jpg",
+  },
+  {
+    id: 58,
+    category: "panaderia",
+    subcategory: "galletas",
+    name: "Galleta Kinder Bueno",
+    description: "Galleta estilo NYC con chocolate Kinder Bueno.",
+    price: 50,
+    image: "/menu/galleta-kinder-bueno.jpg",
+  },
+  {
+    id: 59,
+    category: "panaderia",
+    subcategory: "galletas",
+    name: "Galleta Lotus",
+    description: "Galleta con el sabor característico de Lotus.",
+    price: 55,
+    image: "/menu/galleta-lotus.jpg",
+  },
+  {
+    id: 60,
+    category: "panaderia",
+    subcategory: "galletas",
+    name: "Galleta Cheesecake",
+    description: "Galleta estilo NYC inspirada en el cheesecake.",
+    price: 45,
+    image: "/menu/galleta-cheesecake.jpg",
+  },
+  {
+    id: 61,
+    category: "panaderia",
+    subcategory: "galletas",
+    name: "Galleta Raffaello",
+    description: "Galleta inspirada en los sabores de Raffaello.",
+    price: 55,
+    image: "/menu/galleta-raffaello.jpg",
+  },
+  {
+    id: 62,
+    category: "panaderia",
+    subcategory: "galletas",
+    name: "Galleta Ferrero",
+    description: "Galleta con chocolate y avellana estilo Ferrero.",
+    price: 60,
+    image: "/menu/galleta-ferrero.jpg",
+  },
+  {
+    id: 63,
+    category: "panaderia",
+    subcategory: "galletas",
+    name: "Galleta Choco Nuez",
+    description: "Galleta de chocolate con trocitos de nuez.",
+    price: 45,
+    image: "/menu/galleta-choco-nuez.jpg",
+  },
+  {
+    id: 64,
+    category: "panaderia",
+    subcategory: "galletas",
+    name: "Galleta Choco Coco",
+    description: "Galleta con una deliciosa combinación de chocolate y coco.",
+    price: 45,
+    image: "/menu/galleta-choco-coco.jpg",
+  },
+  {
+    id: 65,
+    category: "panaderia",
+    subcategory: "galletas",
+    name: "Galleta Birthday Cookie",
+    description: "Galleta estilo NYC con un toque dulce y festivo.",
+    price: 40,
+    image: "/menu/galleta-birthday-cookie.jpg",
+  },
+
+  // ========================================
   // BEBIDAS CON ALCOHOL
   // ========================================
 
@@ -485,7 +637,6 @@ const menuItems = [
     price: 99,
     image: "/menu/bellini.jpg",
   },
-
 ];
 
 // ==========================================
@@ -509,7 +660,8 @@ const categories = [
 
 const bakeryCategories = [
   { id: "todos", name: "TODA LA PANADERÍA" },
-  { id: "roles", name: "ROLES" },
+  { id: "roles", name: "ROLES DE CANELA" },
+  { id: "galletas", name: "GALLETAS NYC" },
   { id: "muffins", name: "MUFFINS" },
   { id: "croissants", name: "CROISSANTS" },
   { id: "otros", name: "OTROS PANES" },
@@ -520,22 +672,15 @@ const bakeryCategories = [
 // ==========================================
 
 export default function App() {
-
-  const [activeCategory, setActiveCategory] =
-    useState("todos");
-
-  const [activeBakeryCategory, setActiveBakeryCategory] =
-    useState("todos");
-
-  const [mobileMenuOpen, setMobileMenuOpen] =
-    useState(false);
+  const [activeCategory, setActiveCategory] = useState("todos");
+  const [activeBakeryCategory, setActiveBakeryCategory] = useState("todos");
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   // ========================================
   // FILTRAR PRODUCTOS
   // ========================================
 
   const filteredItems = menuItems.filter((item) => {
-
     if (
       activeCategory !== "todos" &&
       item.category !== activeCategory
@@ -552,7 +697,6 @@ export default function App() {
     }
 
     return true;
-
   });
 
   // ========================================
@@ -569,7 +713,6 @@ export default function App() {
   // ========================================
 
   const scrollTo = (id) => {
-
     const section = document.getElementById(id);
 
     if (section) {
@@ -579,11 +722,9 @@ export default function App() {
     }
 
     setMobileMenuOpen(false);
-
   };
 
   return (
-
     <div className="app">
 
       {/* ==================================
@@ -591,7 +732,6 @@ export default function App() {
       ================================== */}
 
       <header className="header">
-
         <div className="header-container">
 
           <div
@@ -599,79 +739,40 @@ export default function App() {
             onClick={() => scrollTo("inicio")}
             style={{ cursor: "pointer" }}
           >
-            <span className="logo-main">
-              18•18
-            </span>
-
-            <span className="logo-sub">
-              CAFÉ
-            </span>
+            <span className="logo-main">18•18</span>
+            <span className="logo-sub">CAFÉ</span>
           </div>
 
           <button
             className="mobile-toggle"
-            onClick={() =>
-              setMobileMenuOpen(!mobileMenuOpen)
-            }
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Abrir menú"
           >
             ☰
           </button>
 
-          <nav
-            className={
-              mobileMenuOpen
-                ? "nav nav-open"
-                : "nav"
-            }
-          >
-
-            <a
-              href="#inicio"
-              onClick={() => setMobileMenuOpen(false)}
-            >
+          <nav className={mobileMenuOpen ? "nav nav-open" : "nav"}>
+            <a href="#inicio" onClick={() => setMobileMenuOpen(false)}>
               INICIO
             </a>
-
-            <a
-              href="#nosotros"
-              onClick={() => setMobileMenuOpen(false)}
-            >
+            <a href="#nosotros" onClick={() => setMobileMenuOpen(false)}>
               NOSOTROS
             </a>
-
-            <a
-              href="#menu"
-              onClick={() => setMobileMenuOpen(false)}
-            >
+            <a href="#menu" onClick={() => setMobileMenuOpen(false)}>
               MENÚ
             </a>
-
-            <a
-              href="#galeria"
-              onClick={() => setMobileMenuOpen(false)}
-            >
+            <a href="#galeria" onClick={() => setMobileMenuOpen(false)}>
               GALERÍA
             </a>
-
-            <a
-              href="#ubicacion"
-              onClick={() => setMobileMenuOpen(false)}
-            >
+            <a href="#ubicacion" onClick={() => setMobileMenuOpen(false)}>
               UBICACIÓN
             </a>
-
-            <a
-              href="#contacto"
-              onClick={() => setMobileMenuOpen(false)}
-            >
+            <a href="#contacto" onClick={() => setMobileMenuOpen(false)}>
               CONTACTO
             </a>
-
           </nav>
 
         </div>
-
       </header>
 
       {/* ==================================
@@ -681,10 +782,7 @@ export default function App() {
       <section id="inicio" className="hero">
 
         <div className="hero-content">
-
-          <span className="eyebrow">
-            PUEBLA · MÉXICO
-          </span>
+          <span className="eyebrow">PUEBLA · MÉXICO</span>
 
           <h1>
             18•18
@@ -709,11 +807,9 @@ export default function App() {
           >
             CONOCE NUESTRO MENÚ
           </button>
-
         </div>
 
         <div className="hero-image">
-
           <img
             src="/images/hero.jpg"
             alt="18•18 Café"
@@ -721,7 +817,6 @@ export default function App() {
               e.currentTarget.style.display = "none";
             }}
           />
-
         </div>
 
       </section>
@@ -730,27 +825,16 @@ export default function App() {
           NOSOTROS
       ================================== */}
 
-      <section
-        id="nosotros"
-        className="about section"
-      >
+      <section id="nosotros" className="about section">
 
         <div className="section-heading">
-
-          <span className="eyebrow">
-            NUESTRA ESENCIA
-          </span>
-
-          <h2>
-            Dos fechas, un destino.
-          </h2>
-
+          <span className="eyebrow">NUESTRA ESENCIA</span>
+          <h2>Dos fechas, un destino.</h2>
         </div>
 
         <div className="about-content">
 
           <div className="about-text">
-
             <p>
               18•18 Café nació de una idea
               sencilla: crear un espacio
@@ -777,23 +861,16 @@ export default function App() {
               conversaciones, sonrisas
               y momentos especiales.
             </p>
-
           </div>
 
           <div className="about-quote">
-
             <span>18•18</span>
-
             <h3>
               Let coffee
               <br />
               connect us.
             </h3>
-
-            <p>
-              Cada taza cuenta una historia.
-            </p>
-
+            <p>Cada taza cuenta una historia.</p>
           </div>
 
         </div>
@@ -807,37 +884,18 @@ export default function App() {
       <section className="featured section">
 
         <div className="section-heading">
-
-          <span className="eyebrow">
-            HECHO CON CARIÑO
-          </span>
-
-          <h2>
-            Favoritos de la casa
-          </h2>
-
-          <p>
-            Sabores especiales para
-            disfrutar cada momento.
-          </p>
-
+          <span className="eyebrow">HECHO CON CARIÑO</span>
+          <h2>Favoritos de la casa</h2>
+          <p>Sabores especiales para disfrutar cada momento.</p>
         </div>
 
         <div className="featured-grid">
-
           {menuItems
-            .filter((item) =>
-              [3, 5, 8].includes(item.id)
-            )
+            .filter((item) => [3, 5, 8].includes(item.id))
             .map((item) => (
-
-              <article
-                key={item.id}
-                className="featured-card"
-              >
+              <article key={item.id} className="featured-card">
 
                 <div className="featured-image">
-
                   <img
                     src={item.image}
                     alt={item.name}
@@ -846,27 +904,19 @@ export default function App() {
                       e.currentTarget.style.display = "none";
                     }}
                   />
-
                 </div>
 
                 <div className="featured-info">
-
                   <h3>{item.name}</h3>
-
                   <p>{item.description}</p>
 
                   {item.price != null && (
-                    <strong>
-                      ${item.price}
-                    </strong>
+                    <strong>${item.price}</strong>
                   )}
-
                 </div>
 
               </article>
-
             ))}
-
         </div>
 
       </section>
@@ -876,118 +926,73 @@ export default function App() {
       ================================== */}
 
       <section className="statement">
-
         <div className="statement-content">
-
-          <span>
-            18•18 CAFÉ
-          </span>
-
+          <span>18•18 CAFÉ</span>
           <h2>
             Un café,
             <br />
             mil momentos.
           </h2>
-
-          <p>
-            Hecho para compartir.
-          </p>
-
+          <p>Hecho para compartir.</p>
         </div>
-
       </section>
 
       {/* ==================================
           MENÚ
       ================================== */}
 
-      <section
-        id="menu"
-        className="menu-section section"
-      >
+      <section id="menu" className="menu-section section">
 
         <div className="section-heading">
-
-          <span className="eyebrow">
-            DESCUBRE NUESTROS SABORES
-          </span>
-
-          <h2>
-            Nuestro Menú
-          </h2>
-
+          <span className="eyebrow">DESCUBRE NUESTROS SABORES</span>
+          <h2>Nuestro Menú</h2>
           <p>
             Bebidas preparadas con cariño
             y deliciosos postres para acompañar.
           </p>
-
         </div>
 
         {/* CATEGORÍAS PRINCIPALES */}
 
         <div className="categories">
-
           {categories.map((category) => (
-
             <button
               key={category.id}
               className={
-                activeCategory === category.id
-                  ? "active"
-                  : ""
+                activeCategory === category.id ? "active" : ""
               }
-              onClick={() =>
-                changeCategory(category.id)
-              }
+              onClick={() => changeCategory(category.id)}
             >
               {category.name}
             </button>
-
           ))}
-
         </div>
 
-        {/* SUBCATEGORÍAS PANADERÍA */}
+        {/* SUBCATEGORÍAS DE PANADERÍA */}
 
         {activeCategory === "panaderia" && (
-
           <div className="categories bakery-categories">
-
             {bakeryCategories.map((category) => (
-
               <button
                 key={category.id}
                 className={
-                  activeBakeryCategory === category.id
-                    ? "active"
-                    : ""
+                  activeBakeryCategory === category.id ? "active" : ""
                 }
-                onClick={() =>
-                  setActiveBakeryCategory(category.id)
-                }
+                onClick={() => setActiveBakeryCategory(category.id)}
               >
                 {category.name}
               </button>
-
             ))}
-
           </div>
-
         )}
 
-        {/* LISTADO HORIZONTAL */}
+        {/* LISTADO HORIZONTAL DE PRODUCTOS */}
 
         <div className="menu-list">
-
           {filteredItems.map((item) => (
-
-            <article
-              key={item.id}
-              className="menu-item"
-            >
+            <article key={item.id} className="menu-item">
 
               <div className="menu-item-image">
-
                 <img
                   src={item.image}
                   alt={item.name}
@@ -996,7 +1001,6 @@ export default function App() {
                     e.currentTarget.style.display = "none";
                   }}
                 />
-
               </div>
 
               <div className="menu-item-number">
@@ -1004,37 +1008,24 @@ export default function App() {
               </div>
 
               <div className="menu-item-info">
-
-                <h3>
-                  {item.name}
-                </h3>
-
-                <p>
-                  {item.description}
-                </p>
+                <h3>{item.name}</h3>
+                <p>{item.description}</p>
 
                 {item.size && (
                   <span className="menu-item-size">
                     {item.size}
                   </span>
                 )}
-
               </div>
 
               <div className="menu-item-price">
-
                 {item.price != null && (
-                  <strong>
-                    ${item.price}
-                  </strong>
+                  <strong>${item.price}</strong>
                 )}
-
               </div>
 
             </article>
-
           ))}
-
         </div>
 
       </section>
@@ -1043,32 +1034,19 @@ export default function App() {
           GALERÍA
       ================================== */}
 
-      <section
-        id="galeria"
-        className="gallery section"
-      >
+      <section id="galeria" className="gallery section">
 
         <div className="section-heading">
-
-          <span className="eyebrow">
-            NUESTROS MOMENTOS
-          </span>
-
-          <h2>
-            Galería
-          </h2>
-
+          <span className="eyebrow">NUESTROS MOMENTOS</span>
+          <h2>Galería</h2>
           <p>
             Un pequeño vistazo a todo
             lo que hace especial a 18•18 Café.
           </p>
-
         </div>
 
         <div className="gallery-grid">
-
           {[1, 2, 3, 4, 5].map((number) => (
-
             <img
               key={number}
               src={`/images/galeria${number}.jpg`}
@@ -1078,9 +1056,7 @@ export default function App() {
                 e.currentTarget.style.display = "none";
               }}
             />
-
           ))}
-
         </div>
 
       </section>
@@ -1089,28 +1065,15 @@ export default function App() {
           UBICACIÓN
       ================================== */}
 
-      <section
-        id="ubicacion"
-        className="location section"
-      >
+      <section id="ubicacion" className="location section">
 
         <div className="section-heading">
-
-          <span className="eyebrow">
-            VEN A CONOCERNOS
-          </span>
-
-          <h2>
-            Nuestra Ubicación
-          </h2>
-
+          <span className="eyebrow">VEN A CONOCERNOS</span>
+          <h2>Nuestra Ubicación</h2>
         </div>
 
         <div className="location-card">
-
-          <h3>
-            18•18 Café
-          </h3>
+          <h3>18•18 Café</h3>
 
           <p>
             San Juan Tepulco,
@@ -1130,7 +1093,6 @@ export default function App() {
           >
             VER EN GOOGLE MAPS
           </a>
-
         </div>
 
       </section>
@@ -1139,30 +1101,18 @@ export default function App() {
           CONTACTO
       ================================== */}
 
-      <section
-        id="contacto"
-        className="contact section"
-      >
+      <section id="contacto" className="contact section">
 
         <div className="section-heading">
-
-          <span className="eyebrow">
-            SIGAMOS CONECTADOS
-          </span>
-
-          <h2>
-            Contáctanos
-          </h2>
-
+          <span className="eyebrow">SIGAMOS CONECTADOS</span>
+          <h2>Contáctanos</h2>
           <p>
             Síguenos en nuestras redes
             sociales y descubre nuestras novedades.
           </p>
-
         </div>
 
         <div className="contact-links">
-
           <a
             href="https://www.instagram.com/eighteencafe_/"
             target="_blank"
@@ -1171,7 +1121,6 @@ export default function App() {
           >
             INSTAGRAM
           </a>
-
         </div>
 
       </section>
@@ -1183,13 +1132,8 @@ export default function App() {
       <footer className="footer">
 
         <div className="footer-logo">
-
           18•18
-
-          <span>
-            CAFÉ
-          </span>
-
+          <span>CAFÉ</span>
         </div>
 
         <p>
@@ -1210,7 +1154,5 @@ export default function App() {
       </footer>
 
     </div>
-
   );
-
 }
